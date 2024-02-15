@@ -300,6 +300,7 @@ def main():
         donor_GPb = None
         donor_names = ["donor%d" % x for x in range(n_donor)]
 
+    ## Checks empty input and the calls the mocking output function
     if len(cell_dat["variants"]) == 0:
         print("WARNING: no variants in the input data found!")
         print("WARNING: mocking outputs")

@@ -101,6 +101,9 @@ def read_vartrix(alt_mtx, ref_mtx, cell_file, vcf_file=None):
 
 
 def empty_input_write_donor_id(out_dir, donor_ids):
+    """
+    Writes mocked output from vireo
+    """
     ## save summary file
     fid = open(out_dir + "/summary.tsv", "w")
     fid.writelines("Var1\tFreq\n")

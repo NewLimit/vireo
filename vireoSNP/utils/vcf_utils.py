@@ -344,6 +344,8 @@ def parse_donor_GPb(GT_dat, tag="GT", min_prob=0.0):
     if ["GT", "GP", "PL"].count(tag) == 0:
         print("[parse_donor_GPb] Error: no support tag: %s" % tag)
         return None
+
+    # lets us read in empty VCFs
     if len(GT_dat) == 0:
         print("[parse_donor_GPb] Warning: Empty VCF")
         number_of_var = 0
